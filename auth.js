@@ -7,3 +7,12 @@ function verificarSessao(response) {
 
     return true;
 }
+
+const botaoSair = document.getElementById("btnSair");
+
+if (botaoSair) {
+    botaoSair.addEventListener("click", function() {
+        sessionStorage.removeItem("token");
+        window.location.href = "login.html";
+    });
+}
