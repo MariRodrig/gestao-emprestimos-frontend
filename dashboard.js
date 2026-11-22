@@ -4,13 +4,6 @@ if (!token) {
     window.location.href = "login.html";
 }
 
-const btnSair = document.getElementById("btnSair");
-
-btnSair.addEventListener("click", function() {
-    sessionStorage.removeItem("token");
-    window.location.href = "login.html";
-});
-
 async function carregarEquipamentos() {
     const token = sessionStorage.getItem("token");
 
