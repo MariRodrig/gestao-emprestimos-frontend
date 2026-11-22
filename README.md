@@ -50,3 +50,20 @@ O frontend consome uma API REST desenvolvida com Java 17 e Spring Boot, respons�
 **Repositório do backend:**
 
 [Gestão de Empréstimos — Backend](https://github.com/MariRodrig/gestao-emprestimos)
+
+## Capturas de tela
+
+### Login
+![Tela de Login](images/login.png)
+
+### Dashboard
+![Dashboard](images/dashboard.png)
+
+### Equipamentos
+![Tela de Equipamentos](images/equipamentos.png)
+
+### Empréstimos
+![Tela de Empréstimos](images/emprestimos.png)
+
+### Colaboradores
+![Tela de Colaboradores](images/colaboradores.png)
