@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysEmpréstimos - Colaboradores</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <aside class="menu-lateral">
+        <h2>SysEmpréstimos</h2>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="equipamentos.html">Equipamentos</a>
+            <a href="colaboradores.html">Colaboradores</a>
+            <a href="emprestimos.html">Empréstimos</a>
+        </nav>
+
+        <button id="btnSair">Sair</button>
+    </aside>
+
+   
+<main class="conteudo">
+    <h1>Colaboradores</h1>
+    <p>Cadastro e consulta de colaboradores</p>
+
+    <section class="card">
+        <h2>Cadastrar colaborador</h2>
+
+        <form id="formColaborador">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p id="mensagemCadastro"></p>
+    </section>
+
+    <h2>Colaboradores cadastrados</h2>
+
+
+<div class="tabela-responsiva">
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Cargo</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabelaColaboradores">
+        </tbody>
+    </table>
+    </div>
+
+</main>
+
+<script src="auth.js"></script>
+<script src="colaboradores.js"></script>
+</body>
+</html>

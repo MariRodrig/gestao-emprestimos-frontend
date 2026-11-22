@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysEmpréstimos - Equipamentos</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <aside class="menu-lateral">
+        <h2>SysEmpréstimos</h2>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="equipamentos.html">Equipamentos</a>
+            <a href="colaboradores.html">Colaboradores</a>
+            <a href="emprestimos.html">Empréstimos</a>
+        </nav>
+
+        <button id="btnSair">Sair</button>
+    </aside>
+
+    <main class="conteudo">
+        <h1>Equipamentos</h1>
+        <p>Cadastro e consulta de equipamentos</p>
+
+
+<section class="card">
+    <h2>Cadastrar equipamento</h2>
+
+    <form id="formEquipamento">
+        <label for="patrimonio">Patrimônio:</label>
+        <input type="text" id="patrimonio" required>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" required>
+            <option value="">Selecione</option>
+            <option value="NOTEBOOK">Notebook</option>
+            <option value="MONITOR">Monitor</option>
+            <option value="TECLADO">Teclado</option>
+            <option value="MOUSE">Mouse</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <p id="mensagemCadastro"></p>
+</section>
+
+
+        <h2>Equipamentos cadastrados</h2>
+
+        <div class="tabela-responsiva">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Patrimônio</th>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Disponível</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabelaEquipamentos">
+            </tbody>
+        </table>
+
+        </div>
+
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="equipamentos.js"></script>
+</body>
+</html>
+

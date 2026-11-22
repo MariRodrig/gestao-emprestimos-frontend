@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SysEmpréstimos - Empréstimos</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <aside class="menu-lateral">
+        <h2>SysEmpréstimos</h2>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="equipamentos.html">Equipamentos</a>
+            <a href="colaboradores.html">Colaboradores</a>
+            <a href="emprestimos.html">Empréstimos</a>
+        </nav>
+
+        <button id="btnSair">Sair</button>
+    </aside>
+
+   
+<main class="conteudo">
+<h1>Empréstimos</h1>
+<p>Registro e consulta de empréstimos de equipamentos</p>
+
+<section class="card">
+    <h2>Registrar empréstimo</h2>
+
+    <form id="formEmprestimo">
+
+        <label for="colaborador">Colaborador:</label>
+        <select id="colaborador" required>
+            <option value="">Selecione um colaborador</option>
+        </select>
+
+        <label for="equipamento">Equipamento:</label>
+        <select id="equipamento" required>
+            <option value="">Selecione um equipamento</option>
+        </select>
+
+
+        <button type="submit">Registrar empréstimo</button>
+    </form>
+
+    <p id="mensagemEmprestimo"></p>
+</section>
+
+<h2>Empréstimos cadastrados</h2>
+
+<div class="tabela-responsiva">
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Colaborador</th>
+            <th>Equipamento</th>
+            <th>Data do empréstimo</th>
+            <th>Previsão de devolução</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody id="tabelaEmprestimos">
+    </tbody>
+</table>
+
+</div>
+
+</main>
+
+<script src="auth.js"></script>
+<script src="emprestimos.js"></script>
+
+</body>
+</html>

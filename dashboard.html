@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysEmpréstimos - Dashboard</title>
+   <link rel="stylesheet" href="dashboard.css">
+</head>
+
+
+<body>
+
+    <aside class="menu-lateral">
+        <h2>SysEmpréstimos</h2>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="equipamentos.html">Equipamentos</a>
+            <a href="colaboradores.html">Colaboradores</a>
+            <a href="emprestimos.html">Empréstimos</a>
+        </nav>
+
+        <button id="btnSair">Sair</button>
+    </aside>
+
+    <main class="conteudo">
+        <h1>Dashboard</h1>
+        <p>Gestão de Empréstimos de Equipamentos</p>
+
+        <h2>Visão geral</h2>
+
+        <div class="indicadores">
+
+            <section class="card">
+                <h3>Total de equipamentos</h3>
+                <p id="totalEquipamentos">0</p>
+            </section>
+
+            <section class="card">
+                <h3>Equipamentos disponíveis</h3>
+                <p id="equipamentosDisponiveis">0</p>
+            </section>
+
+            <section class="card">
+                <h3>Equipamentos emprestados</h3>
+                <p id="equipamentosEmprestados">0</p>
+            </section>
+
+            <section class="card">
+                <h3>Empréstimos atrasados</h3>
+                <p id="emprestimosAtrasados">0</p>
+            </section>
+
+        </div>
+    </main>
+    
+    <script src="auth.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
