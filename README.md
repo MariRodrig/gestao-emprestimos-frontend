@@ -32,9 +32,7 @@ O frontend foi desenvolvido com HTML, CSS e JavaScript e integrado a uma API RES
 
 ## Backend
 
-O frontend consome uma API REST desenvolvida com Java e Spring Boot, responsável pelas regras de negócio, autenticação e persistência dos dados.## Backend
-
-O frontend consome uma API REST desenvolvida com Java 17 e Spring Boot, responsável pelas regras de negócio, autenticação JWT e persistência dos dados no PostgreSQL.
+O frontend consome uma API REST desenvolvida com Java e Spring Boot, responsável pelas regras de negócio, autenticação e persistência dos dados.
 
 **Tecnologias do backend:**
 - Java 17
